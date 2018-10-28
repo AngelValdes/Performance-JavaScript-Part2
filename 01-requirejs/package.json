@@ -1,0 +1,9 @@
+{
+  "name": "requirejs-demo",
+  "version": "1.0.0",
+  "description": "Simple app demonstrating perf optimizations with RequireJS",
+  "main": "index.html",
+  "devDependencies": {},
+  "author": "jj09",
+  "license": "MIT"
+}
