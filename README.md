@@ -154,12 +154,16 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     - Look at config.require.js for reference to dist folder
     - Look at package.json defined dependencies. Dependency libraries defined in package.json were already installed globaly in the project setup section above.
     - Look at gulpfile.js for tasks configuration to minify css and JavaScript from original folders to "dist" folder.
-3. In VS Code Terminal, Change to folder 02-minify and execute "default" task defined in gulpfile.js
+3. In VS Code Terminal, Change to folder 02-minify and install dependency packages defined in "package.json" (gulp and other utilities local install)
+    ```
+    npm install
+    ```
+4. In VS Code Terminal, execute "default" task defined in gulpfile.js
     ```
     gulp
     ```
     - Look at dist folder for compressed files
-4. In VS Code Terminal, load development server.
+5. In VS Code Terminal, load development server.
     ```
     serve
     ```
