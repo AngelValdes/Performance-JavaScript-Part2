@@ -177,11 +177,15 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     ```
 2. In VS Code Expand 03-lazyload folder and verify current configuration
     - Look at app.js for multiple requires at different points of the app functionality
- 3. In VS Code Terminal, Change to folder 03-lazyload and execute "default" task defined in gulpfile.js
+3. In VS Code Terminal, Change to folder 03-lazyload and install dependency packages defined in "package.json" (gulp and other utilities local install)
+    ```
+    npm install
+    ```
+4. In VS Code Terminal, execute "default" task defined in gulpfile.js
     ```
     gulp
     ```
-4. In VS Code Terminal, load development server.
+5. In VS Code Terminal, load development server.
     ```
     serve
     ```
@@ -195,11 +199,15 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     ```
 2. In VS Code Expand 04-cdn folder and verify current configuration
     - Look at config-require.js for references to CDN locations
-3. In VS Code Terminal, Change to folder 04-cdn and execute "default" task defined in gulpfile.js
+3. In VS Code Terminal, Change to folder 04-cdn and install dependency packages defined in "package.json" (gulp and other utilities local install)
+    ```
+    npm install
+    ```
+4. In VS Code Terminal, execute "default" task defined in gulpfile.js
     ```
     gulp
     ```
-4. In VS Code Terminal, load development server.
+5. In VS Code Terminal, load development server.
     ```
     serve
     ```
@@ -217,11 +225,15 @@ Server uses gzip compression for response if browser supports it. I will simulat
     ```
 2. In VS Code Expand 05-gzip folder and verify current configuration
     - Look at index.html.gz file at the same location than index.html
-3. In VS Code Terminal, Change to folder 05-gzip and execute "default" task defined in gulpfile.js
+3. In VS Code Terminal, Change to folder 05-gzip and install dependency packages defined in "package.json" (gulp and other utilities local install)
+    ```
+    npm install
+    ```
+4. In VS Code Terminal, execute "default" task defined in gulpfile.js
     ```
     gulp
     ```
-4. In VS Code Terminal, load development server with gzip support.
+5. In VS Code Terminal, load development server with gzip support.
     ```
     http-server -g
     ```
