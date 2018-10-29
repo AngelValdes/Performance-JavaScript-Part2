@@ -25,9 +25,8 @@
 - Install [VSCode](https://code.visualstudio.com/)
 - Install [VSCode Extensions](https://marketplace.visualstudio.com)
 - Install npm packages globally (all packages in one command)
-    1. Open VS Code | View menu | Terminal menu item
-        ```JavaScript
-        //copy & paste this command in the terminal
+    1. Open VS Code | View menu | Terminal menu item. copy & paste this command in the terminal:
+        ```
         npm install gulp gulp-clean-css gulp-uglify gulp-concat serve http-server -g
         ```
         <details>
