@@ -229,4 +229,4 @@ Server uses gzip compression for response if browser supports it. I will simulat
 - Size: 0.2 kB (cached)
 
 ## References
-- [Channel 9 video] (https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-Live-Redmond-2016/T15)
+- [Channel 9 video](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-Live-Redmond-2016/T15)
