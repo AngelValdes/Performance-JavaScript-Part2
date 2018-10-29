@@ -1,14 +1,13 @@
 # Performance JavaScript Part - 2
-## How to improve web app performance with various key techniques. (1.1MB down to ~0kB)
-
+## Improve web app performance with various techniques. (1.1MB down to ~0kB)
 - JavaScript Dependency Loader
 - Minify-cation (JavaScript & CSS)
 - Lazy-loading (JavaScript & CSS)
 - CDN Content Delivery Network (JavaScript & CSS)
 - Gzip Compress (JavaScript & CSS)
 - Browser Cache
-<details><summary>Note: Other performance enhancements techniques </summary>
-<p>
+<details>
+<summary>Note: Other performance enhancements techniques </summary>
 
 > Not demonstrated in this exercise.
 - Bundling (JavaScript & CSS)
@@ -17,7 +16,6 @@
 - Offline support
 - JavaScript best practices
 - Server rendering.
-</p>
 </details>
 
 ## Development Environment Setup
@@ -32,11 +30,10 @@
         //copy & paste this command in the terminal
         npm install gulp gulp-clean-css gulp-uglify gulp-concat serve http-server -g
         ```
-        <details><summary>Note: Optional steps to install previous packages one by one.</summary>
-        <p>
+        <details>
+        <summary>Note: Optional steps to install previous packages one by one.</summary>
 
         >  you could install one by one each of the previous listed packages by running these commands:
-
         ```JavaScript
         //to use gulp automation tool
         npm install gulp -g
@@ -51,33 +48,33 @@
         //development web server with gzip support
         npm install http-server -g
         ```
-</p>
-</details>
+        </details>
+        <details>
+        <summary>Note: Optional steps to install other recommended packages.</summary>
 
-- Verify your environment configuration by typing these commands in your terminal
-    ```JavaScript
-    //verify NodeJS is install and ready
-    node -v
-    //verify npm is install and ready
-    npm -v
-    //verify git is install and ready
-    git --version
-    ```
-<details><summary>Note: Optional steps to install other recommended packages.</summary>
-<p>
+        >  you could install other recommended package by running these commands:
+        ```JavaScript
+        //to use TypeScript programming language
+        npm install typescript -g
+        //to use Angular Command Line Interface (Code Generation)
+        npm install @angular/cli -g
+        ```
+        </details>
+<details>
+<summary>Note: Optional steps to verify your environment configuration.</summary>
 
->  you could install other recommended package by running these commands:
-
+> Verify your environment configuration by typing thesecommands in your terminal
 ```JavaScript
-//to use TypeScript programming language
-npm install typescript -g
-//to use Angular Command Line Interface (Code Generation)
-npm install @angular/cli -g
+//verify NodeJS is install and ready
+node -v
+//verify npm is install and ready
+npm -v
+//verify git is install and ready
+git --version
 ```
-</p>
 </details>
-<details><summary>Note: Optional steps to install recommended VS Code Extensions.</summary>
-<p>
+<details>
+<summary>Note: Optional steps to install recommended VS Code Extensions.</summary>
 
 > Recommended VS Code extensions for Angular, .Net Core, and Azure support:
 1. Open VS Code | Extensions (left button bar) search for and install:
@@ -89,25 +86,29 @@ npm install @angular/cli -g
 7. [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
 8. [VS Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 9. [.NET Core Extension Pack](https://marketplace.visualstudio.com/items?itemName=doggy8088.netcore-extension-pack)
-</p>
 </details>
 
 ## Get project code
-In VS Code open your workspace folder. In Terminal Copy & paste this command:
-> If it is the first time you use git in this computer, you need to set your global settings.
+In VS Code open your workspace folder. In Terminal Copy & paste this command/s:
+
+<details>
+<summary>Note: Optional steps for first time using git in this computer.</summary>
+
+> You only need to set your global settings once.
 ```JavaScript
 //Only first time git users, configure your global settings
 -git config --global user.email "youremail@domain.ext"
 -git config --global user.name "First Last"
 ```
-then get the code by running this command in terminal:
-```
+</details>
+
+```SQL
+--to get the code
 git clone https://github.com/AngelValdes/Performance-JavaScript-Part2.git
 ```
-that will create a folder called "Performance-JavaScript-Part2" in your workspace and download the code inside of it. You can now navigate into the folder and see the subfolders organizing the project steps.
+This will create a folder called "Performance-JavaScript-Part2" in your workspace and download the code inside of it. I recommend closing VS Code Folder "your workspace" and open this project specific folder "Performance-JavaScript-Part2". That will set VS Code context to this project.
 
 ## Project Structure
-
 > List of projects in folders. All folder contain a copy of the previous folder with the new performance enhancement technique added to it. The actual application assets and funtionality stays the same.
 
 ![Project List Image](ProjectList3.png)
@@ -143,6 +144,7 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     - Navigate to the application hosted address... something like http://localhost:5000
     - Look at devTools by pressing F12 in Chrome browser, and refresh (Transferred Size: 1.2MB)
     - Look at devTools, downloaded requests, more spread out, require loads them.
+
 ## Part C - Minify
 1. In VS Code Terminal, stop development server by pressing:
     ```
@@ -165,6 +167,7 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     ```
      - Navigate to the application hosted address... something like http://localhost:5000
     - Look at devTools by pressing F12 in Chrome browser, and refresh (Transferred Size: 428kB)
+
 ## Part D - Lazy Loading
 1. In VS Code Terminal, stop development server by pressing:
     ```
@@ -182,6 +185,7 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
     ```
      - Navigate to the application hosted address... something like http://localhost:5000
     - Look at devTools by pressing F12 in Chrome browser, and refresh (Transferred Size: 104kB)
+
 ## Part E - CDN (Content Delivery Network)
 1. In VS Code Terminal, stop development server by pressing:
     ```
@@ -200,6 +204,7 @@ JQuery for DOM manipulation, UnderscoreJS for Utilities, VideoJS for more video 
      - Navigate to the application hosted address... something like http://localhost:5000
     - Look at devTools by pressing F12 in Chrome browser, and refresh (Transferred Size: 49.2kB)
     > Note: Using JavaScript libraries from CDN for performance improvement is only clear when using implicit browser caching.
+
 ## Part F - Gzip (Compress HTML, CSS, JavaScript)
 Browser sends header that accepts gzip: "Accept-encoding: gzip, deflate” (no quotes)
 
@@ -224,4 +229,3 @@ Server uses gzip compression for response if browser supports it. I will simulat
 ## Part G - Browser Cache
 * Enable cache on devTools and refresh
 * Size: 0.2 kB (cached)
-
