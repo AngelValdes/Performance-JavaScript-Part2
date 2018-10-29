@@ -225,5 +225,8 @@ Server uses gzip compression for response if browser supports it. I will simulat
     - Look at devTools by pressing F12 in Chrome browser, and refresh (Transferred Size: 38.2kB)
 
 ## Part G - Browser Cache
-* Enable cache on devTools and refresh
-* Size: 0.2 kB (cached)
+- Enable cache on devTools and refresh
+- Size: 0.2 kB (cached)
+
+## References
+- [Channel 9 video] (https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-Live-Redmond-2016/T15)
