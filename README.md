@@ -101,8 +101,7 @@ In VS Code open your workspace folder. In Terminal Copy & paste this command/s:
 ```
 </details>
 
-```SQL
---to get the code
+```
 git clone https://github.com/AngelValdes/Performance-JavaScript-Part2.git
 ```
 This will create a folder called "Performance-JavaScript-Part2" in your workspace and download the code inside of it. I recommend closing VS Code Folder "your workspace" and open this project specific folder "Performance-JavaScript-Part2". That will set VS Code context to this project.
